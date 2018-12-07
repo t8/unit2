@@ -1,0 +1,87 @@
+
+<!-- This is HTML, it's a markdown language -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sum and Difference formula converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+</head>
+<body>
+
+<section class="hero is-fullheight is-bold is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <h1 class="title">
+                        Angle Sum and Difference Calculator
+                    </h1>
+                    <p class="subtitle">
+                        Is this considered bending the rules for the python assignment?
+                    </p>
+                    <hr />
+                    <div class="field">
+                        <label><b>Angle A</b></label>
+                        <p class="control has-icons-right">
+                            <input class="input is-success is-rounded" type="number" value="240" id="a" oninput="valuesChanged()">
+                            <span class="icon is-small is-right">
+                              &deg;
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label><b>Angle B</b></label>
+                        <p class="control has-icons-right">
+                            <input class="input is-success is-rounded" type="number" value="135" id="b" oninput="valuesChanged()">
+                            <span class="icon is-small is-right">
+                              &deg;
+                            </span>
+                        </p>
+                    </div>
+                    <hr />
+                    <a class="button is-rounded is-success">The real code is here!</a>
+                </div>
+                <div class="column is-two-thirds">
+                    <table class="table is-success is-fullwidth is-bordered">
+                        <thead>
+                            <tr>
+                                <th>Angle A</th>
+                                <th>Angle B</th>
+                                <th>sin(A + B)</th>
+                                <th>sin(A - B)</th>
+                                <th>cos(A + B)</th>
+                                <th>cos(A - B)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="at">1</td>
+                                <td id="bt">2</td>
+                                <td id="s1t">38</td>
+                                <td id="s2t">23</td>
+                                <td id="c1t">12</td>
+                                <td id="c2t">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            This footer is here to prove that Tate Berenbaum from Mrs. Roark's class wrote this
+        </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="calculate.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+</html>
